@@ -21,7 +21,7 @@ func BenchmarkStringMatchWithoutRegexp(b *testing.B) {
 			return false
 		}
 		for _, c := range s[2:] {
-			if c < '0' || '9' < c && c < 'A' || 'Z' < c && c < 'a' || 'z' < c {
+			if c < '0' || '9' < c && c < 'A' || 'F' < c && c < 'a' || 'f' < c {
 				return false
 			}
 		}
